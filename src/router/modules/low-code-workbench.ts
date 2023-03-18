@@ -9,6 +9,12 @@ const lowCodeWorkbench: AuthRoute.Route = {
       path: '/low-code-workbench/process-designer',
       component: 'self',
       meta: { title: '流程设计器', icon: 'carbon:ibm-process-mining' }
+    },
+    {
+      name: 'low-code-workbench_cloud-function',
+      path: '/low-code-workbench/cloud-function',
+      component: 'self',
+      meta: { title: '云函数', icon: 'mdi:code-json' }
     }
   ]
 };
