@@ -69,7 +69,7 @@ export const useAuthStore = defineStore('auth-store', {
         if (route.isInitAuthRoute) {
           window.$notification?.success({
             title: '登录成功!',
-            content: `欢迎回来，${this.userInfo.userName}!`,
+            content: `欢迎回来，${this.userInfo.username}!`,
             duration: 3000
           });
         }
@@ -88,9 +88,9 @@ export const useAuthStore = defineStore('auth-store', {
       let successFlag = false;
 
       // 先把token存储到缓存中(后面接口的请求头需要token)
-      const { token, refreshToken } = backendToken;
+      const { token } = backendToken;
       localStg.set('token', token);
-      localStg.set('refreshToken', refreshToken);
+      localStg.set('refreshToken', token);
 
       // 获取用户信息
       const { data } = await fetchUserInfo();
@@ -114,9 +114,9 @@ export const useAuthStore = defineStore('auth-store', {
      */
     async login(userName: string, password: string) {
       this.loginLoading = true;
-      const { data } = await fetchLogin(userName, password);
-      if (data) {
-        await this.handleActionAfterLogin(data);
+      const response = await fetchLogin(userName, password);
+      if (response.data) {
+        await this.handleActionAfterLogin(response.data);
       }
       this.loginLoading = false;
     },
