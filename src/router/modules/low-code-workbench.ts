@@ -39,6 +39,12 @@ const lowCodeWorkbench: AuthRoute.Route = {
       path: '/low-code-workbench/form-designer',
       component: 'self',
       meta: { title: '表单设计器', icon: 'icon-park-outline:form-one' }
+    },
+    {
+      name: 'low-code-workbench_decision-model-designer',
+      path: '/low-code-workbench/decision-model-designer',
+      component: 'self',
+      meta: { title: '决策模型设计器', icon: 'material-symbols:rule-sharp' }
     }
   ]
 };
