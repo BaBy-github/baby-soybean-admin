@@ -70,15 +70,15 @@ const apis: MockMethod[] = [
         };
       }
       const userInfo: Auth.UserInfo = {
-        userId: '',
+        id: '',
         username: '',
         userRole: 'user'
       };
       const isInUser = userModel.some(item => {
         const flag = item.token === authorization;
         if (flag) {
-          const { userId: itemUserId, username, userRole } = item;
-          Object.assign(userInfo, { userId: itemUserId, username, userRole });
+          const { id: itemUserId, username, userRole } = item;
+          Object.assign(userInfo, { id: itemUserId, username, userRole });
         }
         return flag;
       });

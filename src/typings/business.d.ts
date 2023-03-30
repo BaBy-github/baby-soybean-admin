@@ -11,7 +11,7 @@ declare namespace Auth {
   /** 用户信息 */
   interface UserInfo {
     /** 用户id */
-    userId: string;
+    id: string;
     /** 用户名 */
     username: string;
     /** 用户角色类型 */
