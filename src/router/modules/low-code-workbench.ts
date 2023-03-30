@@ -21,6 +21,12 @@ const lowCodeWorkbench: AuthRoute.Route = {
       path: '/low-code-workbench/cloud-function',
       component: 'self',
       meta: { title: '云函数', icon: 'tabler:code-dots' }
+    },
+    {
+      name: 'low-code-workbench_data-structure',
+      path: '/low-code-workbench/data-structure',
+      component: 'self',
+      meta: { title: '数据结构', icon: 'ph:tree-structure-duotone' }
     }
   ]
 };
