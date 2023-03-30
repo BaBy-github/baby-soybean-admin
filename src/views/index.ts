@@ -32,7 +32,7 @@ export const views: Record<
   'low-code-workbench_data-connector': () => import('./low-code-workbench/data-connector/index.vue'),
   'low-code-workbench_data-structure': () => import('./low-code-workbench/data-structure/index.vue'),
   'low-code-workbench_form-designer': () => import('./low-code-workbench/form-designer/index.vue'),
-  'low-code-workbench_process-designer': () => import('./low-code-workbench/process-designer/index.vue'),
+  'low-code-workbench_process-model-designer': () => import('./low-code-workbench/process-model-designer/index.vue'),
   'low-code-workbench_resource-manager': () => import('./low-code-workbench/resource-manager/index.vue'),
   management_auth: () => import('./management/auth/index.vue'),
   management_role: () => import('./management/role/index.vue'),

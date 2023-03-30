@@ -11,8 +11,8 @@ const lowCodeWorkbench: AuthRoute.Route = {
       meta: { title: '资源管理器', icon: 'grommet-icons:resources' }
     },
     {
-      name: 'low-code-workbench_process-designer',
-      path: '/low-code-workbench/process-designer',
+      name: 'low-code-workbench_process-model-designer',
+      path: '/low-code-workbench/process-model-designer',
       component: 'self',
       meta: { title: '流程设计器', icon: 'carbon:ibm-process-mining' }
     },
