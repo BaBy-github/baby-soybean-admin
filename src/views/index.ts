@@ -29,6 +29,7 @@ export const views: Record<
   'function_tab-multi-detail': () => import('./function/tab-multi-detail/index.vue'),
   login: () => import('./_builtin/login/index.vue'),
   'low-code-workbench_cloud-function': () => import('./low-code-workbench/cloud-function/index.vue'),
+  'low-code-workbench_data-connector': () => import('./low-code-workbench/data-connector/index.vue'),
   'low-code-workbench_data-structure': () => import('./low-code-workbench/data-structure/index.vue'),
   'low-code-workbench_process-designer': () => import('./low-code-workbench/process-designer/index.vue'),
   'low-code-workbench_resource-manager': () => import('./low-code-workbench/resource-manager/index.vue'),

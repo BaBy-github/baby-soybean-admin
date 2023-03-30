@@ -27,6 +27,12 @@ const lowCodeWorkbench: AuthRoute.Route = {
       path: '/low-code-workbench/data-structure',
       component: 'self',
       meta: { title: '数据结构', icon: 'ph:tree-structure-duotone' }
+    },
+    {
+      name: 'low-code-workbench_data-connector',
+      path: '/low-code-workbench/data-connector',
+      component: 'self',
+      meta: { title: '数据连接器', icon: 'ph:plugs-duotone' }
     }
   ]
 };
