@@ -33,6 +33,12 @@ const lowCodeWorkbench: AuthRoute.Route = {
       path: '/low-code-workbench/data-connector',
       component: 'self',
       meta: { title: '数据连接器', icon: 'ph:plugs-duotone' }
+    },
+    {
+      name: 'low-code-workbench_form-designer',
+      path: '/low-code-workbench/form-designer',
+      component: 'self',
+      meta: { title: '表单设计器', icon: 'icon-park-outline:form-one' }
     }
   ]
 };
