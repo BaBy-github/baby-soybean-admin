@@ -1,9 +1,18 @@
 <template>
-  <n-space :vertical="true" :size="16"> </n-space>
+  <div class="bpmn-process-container">
+    <Designer />
+  </div>
 </template>
 
 <script lang="ts" setup>
-import {} from './components';
+import Designer from './components/process-model-canvas.vue';
 </script>
 
-<style scoped></style>
+<style scoped>
+body,
+html,
+.bpmn-process-container {
+  height: 100%;
+  width: 100%;
+}
+</style>
