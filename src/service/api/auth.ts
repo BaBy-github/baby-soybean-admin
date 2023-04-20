@@ -1,6 +1,7 @@
-import { mockRequest, request } from '../request';
+import { mockRequest } from '../request';
+// import { mockRequest, request } from '../request';
 
-const basePath = '/users';
+// const basePath = '/users';
 
 /**
  * 获取验证码
@@ -17,12 +18,14 @@ export function fetchSmsCode(phone: string) {
  * @param password - 密码
  */
 export function fetchLogin(username: string, password: string) {
-  return request.post<ApiAuth.Token>(`${basePath}/login`, { username, password });
+  // return request.post<ApiAuth.Token>(`${basePath}/login`, { username, password });
+  return mockRequest.post<ApiAuth.Token>('/login', { username, password });
 }
 
 /** 获取用户信息 */
 export function fetchUserInfo() {
-  return request.get<ApiAuth.UserInfo>(`${basePath}/me`);
+  // return request.get<ApiAuth.UserInfo>(`${basePath}/me`);
+  return mockRequest.get<ApiAuth.UserInfo>('/getUserInfo');
 }
 
 /**
